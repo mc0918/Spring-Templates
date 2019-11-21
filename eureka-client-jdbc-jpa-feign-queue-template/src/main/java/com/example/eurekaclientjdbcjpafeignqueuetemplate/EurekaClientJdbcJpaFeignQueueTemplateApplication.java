@@ -16,6 +16,12 @@ public class EurekaClientJdbcJpaFeignQueueTemplateApplication {
 
 	/*
 	SET UP TO USE JPA, TO USE JDBC CHANGE ANNOTATIONS
+
+	TO RUN APP:
+		1. enter real database name in BOTH application.properties files
+		2. enter config information in bootstrap.properties
+		3. enter real feign client name and configure
+		4. change controller, models, etc to suit your needs
 	 */
 
 	@Bean
