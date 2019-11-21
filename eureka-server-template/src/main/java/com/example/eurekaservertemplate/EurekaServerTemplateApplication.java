@@ -9,7 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class EurekaServerTemplateApplication {
 
 	/*
-	THIS APP IS GOOD TO GO, JUST RUN IT
+	THIS APP IS GOOD TO GO, JUST RUN IT (or change default port to what you want)
 	 */
 
 	public static void main(String[] args) {

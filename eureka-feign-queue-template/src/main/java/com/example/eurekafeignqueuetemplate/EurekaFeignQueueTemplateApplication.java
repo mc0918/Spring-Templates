@@ -16,6 +16,12 @@ import org.springframework.context.annotation.Bean;
 @EnableFeignClients
 public class EurekaFeignQueueTemplateApplication {
 
+	/*
+	TO RUN THIS APP:
+		1. change <name> to name of service
+		2. config the service you're feigning or delete ModelClient
+	 */
+
 	public static final String TOPIC_EXCHANGE_NAME = "<name>-exchange";
 	public static final String QUEUE_NAME = "<name>-queue";
 	public static final String ROUTING_KEY = "<name>.add.#";
