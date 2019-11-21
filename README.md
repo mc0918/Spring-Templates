@@ -1,5 +1,9 @@
 # Spring-Templates
 
+Instructions for configuring each project are in the application class for each project
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
 **config-server-template**: barebones config server
 
 **eureka-client-jdbc-jpa-feign-queue-template**: microservice-ready template, with all the dependencies for an edge service (minus security/oauth) but can be configured for any service
