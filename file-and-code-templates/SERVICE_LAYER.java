@@ -41,7 +41,7 @@ in which case the methods should be:
     }
     
     public void delete${FEIGN_OBJECT}(int id){
-        client.delete${FEIGN_OBJECT}(o);
+        client.delete${FEIGN_OBJECT}(id);
     }#end
     
     #if(${DAO_CLASS}!="")
