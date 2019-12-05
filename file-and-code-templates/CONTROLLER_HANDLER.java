@@ -14,7 +14,7 @@ import org.springframework.web.context.request.WebRequest;
 public class ${NAME} {
     @ExceptionHandler(value = {${EXCEPTION_1}.class})
     #if(${UNPROCESSABLE_ENTITY} != "")@ResponseStatus(HttpStatus.${UNPROCESSABLE_ENTITY})#end
-    #if(${UNPROCESSABLE_ENTITY} == "")@ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
+    #if(${UNPROCESSABLE_ENTITY} == "")@ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)#end
     public ResponseEntity<VndErrors> handle${EXCEPTION_1}Exception(${EXCEPTION_1} e, WebRequest request) {
         #if(${UNPROCESSABLE_ENTITY} != "")return buildResponseEntity(e, request, HttpStatus.${UNPROCESSABLE_ENTITY});#end
         #if(${UNPROCESSABLE_ENTITY} == "")return buildResponseEntity(e, request, HttpStatus.UNPROCESSABLE_ENTITY);#end
